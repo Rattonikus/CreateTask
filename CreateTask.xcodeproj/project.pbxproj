@@ -14,7 +14,6 @@
 		785893232B2B4A4800F4BD30 /* CreateTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785893222B2B4A4800F4BD30 /* CreateTaskTests.swift */; };
 		7858932D2B2B4A4800F4BD30 /* CreateTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7858932C2B2B4A4800F4BD30 /* CreateTaskUITests.swift */; };
 		7858932F2B2B4A4800F4BD30 /* CreateTaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7858932E2B2B4A4800F4BD30 /* CreateTaskUITestsLaunchTests.swift */; };
-		7858933E2B2B4B0500F4BD30 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7858933D2B2B4B0500F4BD30 /* QuizView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +44,6 @@
 		785893282B2B4A4800F4BD30 /* CreateTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CreateTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7858932C2B2B4A4800F4BD30 /* CreateTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskUITests.swift; sourceTree = "<group>"; };
 		7858932E2B2B4A4800F4BD30 /* CreateTaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		7858933D2B2B4B0500F4BD30 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +94,7 @@
 		785893102B2B4A4600F4BD30 /* CreateTask */ = {
 			isa = PBXGroup;
 			children = (
+				7858933F2B2B4B7600F4BD30 /* Model */,
 				7858933B2B2B4A5C00F4BD30 /* Resources */,
 				7858933C2B2B4A6A00F4BD30 /* ViewControllers */,
 				785893172B2B4A4800F4BD30 /* Preview Content */,
@@ -141,9 +140,15 @@
 			isa = PBXGroup;
 			children = (
 				785893132B2B4A4600F4BD30 /* MainView.swift */,
-				7858933D2B2B4B0500F4BD30 /* QuizView.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7858933F2B2B4B7600F4BD30 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,7 +283,6 @@
 			files = (
 				785893142B2B4A4600F4BD30 /* MainView.swift in Sources */,
 				785893122B2B4A4600F4BD30 /* CreateTaskApp.swift in Sources */,
-				7858933E2B2B4B0500F4BD30 /* QuizView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
