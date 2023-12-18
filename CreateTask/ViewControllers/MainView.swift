@@ -60,11 +60,11 @@ struct MainView: View
                 HStack
                 {
                     Button("0", action: placeholder)
-                        .buttonStyle(.bordered)
-                        .tint(.white)
-                        .clipShape(.capsule)
-                        .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 100)
-                        .font(.system(size: 50))
+                        .font(.system(size: 35))
+                        .foregroundColor(.white)
+                        .background(Color(red: 55/255.0, green: 55/255.0, blue: 55/255.0))
+                        .cornerRadius(35)
+                    
 
 
                 }

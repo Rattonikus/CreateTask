@@ -15,6 +15,8 @@
 		7858932D2B2B4A4800F4BD30 /* CreateTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7858932C2B2B4A4800F4BD30 /* CreateTaskUITests.swift */; };
 		7858932F2B2B4A4800F4BD30 /* CreateTaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7858932E2B2B4A4800F4BD30 /* CreateTaskUITestsLaunchTests.swift */; };
 		936640972B2E64B500C21D05 /* testView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936640962B2E64B500C21D05 /* testView.swift */; };
+		936640992B2E954000C21D05 /* a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 936640982B2E954000C21D05 /* a.jpg */; };
+		9366409B2B2FCFB000C21D05 /* AnotherCOncept.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9366409A2B2FCFB000C21D05 /* AnotherCOncept.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		7858932C2B2B4A4800F4BD30 /* CreateTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskUITests.swift; sourceTree = "<group>"; };
 		7858932E2B2B4A4800F4BD30 /* CreateTaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		936640962B2E64B500C21D05 /* testView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testView.swift; sourceTree = "<group>"; };
+		936640982B2E954000C21D05 /* a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = a.jpg; path = ../../../../../../Downloads/a.jpg; sourceTree = "<group>"; };
+		9366409A2B2FCFB000C21D05 /* AnotherCOncept.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherCOncept.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +136,7 @@
 		7858933B2B2B4A5C00F4BD30 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				936640982B2E954000C21D05 /* a.jpg */,
 				785893112B2B4A4600F4BD30 /* CreateTaskApp.swift */,
 				785893152B2B4A4800F4BD30 /* Assets.xcassets */,
 			);
@@ -143,6 +148,7 @@
 			children = (
 				785893132B2B4A4600F4BD30 /* MainView.swift */,
 				936640962B2E64B500C21D05 /* testView.swift */,
+				9366409A2B2FCFB000C21D05 /* AnotherCOncept.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -258,6 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				936640992B2E954000C21D05 /* a.jpg in Resources */,
 				785893192B2B4A4800F4BD30 /* Preview Assets.xcassets in Resources */,
 				785893162B2B4A4800F4BD30 /* Assets.xcassets in Resources */,
 			);
@@ -284,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9366409B2B2FCFB000C21D05 /* AnotherCOncept.swift in Sources */,
 				785893142B2B4A4600F4BD30 /* MainView.swift in Sources */,
 				785893122B2B4A4600F4BD30 /* CreateTaskApp.swift in Sources */,
 				936640972B2E64B500C21D05 /* testView.swift in Sources */,
