@@ -66,6 +66,8 @@ struct testView: View
         [.zero, .decimal, .equal],
     ]
     
+    @State var displayVal = "0"
+    
     var body: some View
     {
         ZStack
@@ -79,7 +81,7 @@ struct testView: View
                 {
                     //Text disp
                     Spacer()
-                    Text("0")
+                    Text(displayVal)
                         .bold()
                         .font(.system(size: 64))
                     .foregroundColor(.white)
@@ -97,22 +99,44 @@ struct testView: View
                         {
                             item in
                             
-                            Button(action: {}, label: {Text(item.rawValue)})
+                            Button(action: {didPress(button: item)}, label: {Text(item.rawValue)})
                                 .font(.system(size:40))
                                 .bold()
                                 .frame(width: self.buttonWidth(item: item), height: self.buttonHeight(), alignment: buttonAlign(item: item))
                                 .background(item.buttonColor)
                                 .foregroundColor(item.textColor)
                                 .cornerRadius(self.buttonWidth(item: item)/2)
-                            
-                            
-                                
                     }
                         .padding(.bottom, 4)
                         
                     }
                 }
             }
+        }
+    }
+    
+    
+    func didPress(button: CalcButton)
+    {
+        switch button
+        {
+        case .divide, .multiply, .add, .subtract, .equal:
+            break
+        case .clear:
+            displayVal = "0"
+        case  .negative, .percent:
+            break
+        default:
+            let number = button.rawValue
+            if displayVal == "0"
+            {
+                displayVal = number
+            }
+            else
+            {
+                displayVal = "\(displayVal)\(number)"
+            }
+            
         }
     }
     
