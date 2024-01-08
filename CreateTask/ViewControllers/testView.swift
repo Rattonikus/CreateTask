@@ -18,7 +18,7 @@ enum CalcButton: String
     case seven = "7"
     case eight = "8"
     case nine = "9"
-    case zero = "   0"
+    case zero = "0"
     case add = "+"
     case subtract = "-"
     case divide = "÷"
@@ -99,7 +99,21 @@ struct testView: View
                         {
                             item in
                             
-                            Button(action: {didPress(button: item)}, label: {Text(item.rawValue)})
+                            Button(action:
+                                {
+                                    didPress(button: item)
+                                },
+                                   label: 
+                                {
+                                if item == .zero
+                                {
+                                    Text("   " + item.rawValue)
+                                }
+                                else
+                                {
+                                    Text(item.rawValue)
+                                }
+                                })
                                 .font(.system(size:40))
                                 .bold()
                                 .frame(width: self.buttonWidth(item: item), height: self.buttonHeight(), alignment: buttonAlign(item: item))
@@ -165,6 +179,8 @@ struct testView: View
         
         return .center
     }
+    
+   
 }
 
 #Preview {
