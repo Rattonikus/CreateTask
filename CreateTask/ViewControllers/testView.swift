@@ -53,10 +53,13 @@ enum CalcButton: String
             return Color(.white)
         }
     }
+    
+    
 }
 
 struct testView: View 
 {
+    
     let buttons: [[CalcButton]] =
     [
         [.clear, .negative, .percent, .divide],
@@ -140,8 +143,11 @@ struct testView: View
             displayVal = "0"
         case  .negative, .percent:
             break
+            
         default:
+            
             let number = button.rawValue
+            
             if displayVal == "0"
             {
                 displayVal = number
@@ -153,6 +159,10 @@ struct testView: View
             
         }
     }
+    
+   
+    
+    
     
     func buttonWidth(item: CalcButton) -> CGFloat
     {
